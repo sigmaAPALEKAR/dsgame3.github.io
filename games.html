@@ -17,6 +17,65 @@
           color: white;
           cursor: pointer;
         }
+        @keyframes colorCycle {
+          0% {
+            color: #0000ff;
+          }
+          10% {
+            color: #2b2abb;
+          }
+          20% {
+            color: #3a32cc;
+          }
+          30% {
+            color: #4b29d1;
+          }
+          40% {
+            color: #5e1fb3;
+          }
+          50% {
+            color: #6d1a9f;
+          }
+          60% {
+            color: #7a0099;
+          }
+          70% {
+            color: #8a007f;
+          }
+          80% {
+            color: #9b009e;
+          }
+          90% {
+            color: #9d1a8f;
+          }
+          100% {
+            color: #0000ff;
+          }
+        }
+
+        .animated-text {
+          animation: colorCycle 3s infinite;
+        }
+        @keyframes gradientMove {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        .gradient-text {
+          color: transparent;
+          background: linear-gradient(to right, #4f46e5, #9333ea, #ec4899);
+          background-clip: text;
+          -webkit-background-clip: text;
+          background-size: 200% 100%;
+          animation: gradientMove 2s linear infinite;
+        }
       </style>
     </head>
 
@@ -32,7 +91,7 @@
           <button
             style="margin-left: 25px"
             onclick="window.location.href = 'https://tvplayer.pages.dev'"
-            class="topbutton"
+            class="topbutton gradient-text"
           >
             Watch
           </button>
@@ -92,6 +151,8 @@
       <p class="flash">Flash</p>
       <p class="modded">Modded</p>
       <p class="new">New</p>
+      <p class="gradient-text">Special</p>
+
       <input
         id="search"
         type="text"
@@ -102,16 +163,18 @@
       <h1 style="font-size: larger"></h1>
       <br /><br /><br />
       <div id="parentcontainer" class="gamelist">
-        <a href="https://nchs.online/" class="gamechild popular"
+        <a href="https://nchs.online/" class="gamechild gradient-text"
           >Time Until End of Period</a
         >
         <br /><br /><br />
-        <a href="https://tvplayer.pages.dev" class="gamechild popular"
+        <a href="https://tvplayer.pages.dev" class="gamechild gradient-text"
           >Watch TV/Movies</a
         >
         <br /><br /><br />
 
-        <a href="final-grade/" class="gamechild new">Final Grade Calculator</a>
+        <a href="final-grade/" class="gamechild gradient-text"
+          >Final Grade Calculator</a
+        >
         <br /><br /><br />
         <a href="game2/10-minutes-till-dawn/" class="gamechild notworking"
           >10 Minutes Till Dawn</a
@@ -283,7 +346,7 @@
         <br /><br /><br />
         <a href="geometrydash" class="gamechild flash">Geometry Dash</a>
         <br /><br /><br />
-        <a href="real-geometry-dash/" class="gamechild popular"
+        <a href="real-geometry-dash/" class="gamechild gradient-text"
           >Geometry Dash (Lite)</a
         >
         <br /><br /><br />
@@ -399,9 +462,11 @@
           >Papa's Pizzeria</a
         >
         <br /><br /><br />
-        <a href="runpx" class="gamechild new">Proxy (Active)</a>
+        <a href="runpx" class="gamechild gradient-text">Proxy (Active)</a>
         <br /><br /><br />
-        <a href="https://dylansantwani.com/run.php" class="gamechild new"
+        <a
+          href="https://dylansantwani.com/run.php"
+          class="gamechild gradient-text"
           >Proxy (Custom)</a
         >
         <br /><br /><br />
@@ -415,7 +480,7 @@
         <br /><br /><br />
         <a href="retro-bowl/" class="gamechild popular">Retro Bowl</a>
         <br /><br /><br />
-        <a href="retrobowlexploitguide.html" class="gamechild modded"
+        <a href="retrobowlexploitguide.html" class="gamechild gradient-text"
           >Retro Bowl (Infinite Coaching Credits)</a
         >
         <br /><br /><br />
@@ -437,20 +502,29 @@
         <br /><br /><br />
         <a href="self-titled/" class="gamechild new">Self Titled</a>
         <br /><br /><br />
-        <a href="sandtris/" class="gamechild new">Sandtris</a>
+        <a href="sandtris/" class="gamechild gradient-text">Sandtris</a>
         <br /><br /><br />
         <a href="slope/" class="gamechild popular">Slope</a>
         <br /><br /><br />
-        <a href="stack/" class="gamechild">Stack</a>
+        <a href="stack/" class="gamechild gradient-text">Stack</a>
         <br /><br /><br />
         <a href="stickman-hook/" class="gamechild popular">Stickman Hook</a>
         <br /><br /><br />
         <a href="subway-surfers/" class="gamechild popular">Subway Surfers</a>
         <br /><br /><br />
-        <a href="subway-surfers-new-york-main/" class="gamechild"
+        <a href="subway-surfers-new-york-main/" class="gamechild gradient-text"
           >Subway Surfers New York</a
         >
         <br /><br /><br />
+        <a href="subway-surfers-san-francisco-main/" class="gamechild"
+          >Subway Surfers San Francisco</a
+        >
+        <br /><br /><br />
+        <a href="subway-surfers-zurich-main/" class="gamechild"
+          >Subway Surfers Zurich</a
+        >
+        <br /><br /><br />
+
         <a href="superhot-main/" class="gamechild notworking">Superhot</a>
         <br /><br /><br />
         <a href="super-mario-63/" class="gamechild emulator">Super Mario 63</a>
@@ -461,14 +535,7 @@
         <br /><br /><br />
         <a href="super-star-car-main/" class="gamechild new">Super Star Car</a>
         <br /><br /><br />
-        <a href="subway-surfers-san-francisco-main/" class="gamechild"
-          >Subway Surfers San Francisco</a
-        >
-        <br /><br /><br />
-        <a href="subway-surfers-zurich-main/" class="gamechild"
-          >Subway Surfers Zurich</a
-        >
-        <br /><br /><br />
+
         <a href="thereisnogame/" class="gamechild new">There is no game</a>
         <br /><br /><br />
         <a href="tetris/tetris.html" class="gamechild popular">Tetris</a>
@@ -521,6 +588,13 @@
         <p class="request-text">
           Send game requests to
           <a href="mailto:dylansantwani@gmail.com">dylansantwani@gmail.com</a>
+        </p>
+        <p
+          onclick="window.location.href='https://github.com/dylansantwani'"
+          style="cursor: pointer; color: blue; text-decoration: underline"
+          class="request-text"
+        >
+          See my github
         </p>
       </div>
     </body>
