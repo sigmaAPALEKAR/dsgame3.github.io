@@ -4,180 +4,142 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="doc.ico" />
-
         <title>Untitled Document - Google Docs</title>
+
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
         <style>
+            /* Ensure the dark mode is applied by default */
             body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                margin: 0;
-                padding: 0;
-                color: #333;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            header {
-                background-color: #007bff;
-                color: #fff;
-                text-align: center;
-                padding: 2em 0;
-                width: 100%;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
-
-            header h1 {
-                font-size: 2.5em;
-                margin: 0;
-            }
-
-            header p {
-                margin: 0.5em 0;
-                font-size: 1.2em;
+                background-color: #111111; /* Very dark background */
+                color: #f0f0f0; /* Light text */
             }
 
             .container {
-                width: 90%;
-                max-width: 800px;
-                margin: 40px auto;
-                padding: 20px;
-                background-color: #fff;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                border-radius: 10px;
-                text-align: center;
+                background-color: #1a1a2e; /* Darker container */
+                border: 2px solid #7a3dff; /* Purple border */
             }
 
             .btn-find-more {
-                display: inline-block;
-                margin-top: 20px;
-                padding: 12px 20px;
-                background-color: #007bff;
-                color: #fff;
-                text-decoration: none;
-                font-size: 1.2em;
-                border-radius: 8px;
-                text-align: center;
-                transition: background-color 0.3s;
+                background-color: #7a3dff; /* Purple button */
+                color: white;
             }
 
             .btn-find-more:hover {
-                background-color: #0056b3;
-            }
-
-            .game-list {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                justify-content: center;
+                background-color: #5c2d9e; /* Darker purple button */
             }
 
             .game-item {
-                background-color: #f9f9f9;
-                padding: 20px;
-
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                border-radius: 8px;
-                width: 100%;
-                max-width: 250px;
-                text-align: center;
-                transition: transform 0.2s;
-            }
-
-            .game-item:hover {
-                transform: translateY(-10px);
-            }
-
-            .game-item img {
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-                margin-bottom: 10px;
-            }
-
-            .game-item h3 {
-                font-size: 1.2em;
-                margin: 10px 0;
-            }
-
-            .game-item p {
-                font-size: 1em;
-                color: #666;
-                margin: 5px 0;
+                background-color: #2b2b3b; /* Dark purple game items */
+                border: 2px solid #7a3dff; /* Purple border */
             }
 
             .game-item a {
-                display: inline-block;
-                margin-top: 10px;
-                padding: 10px 15px;
-                background-color: #007bff;
-                color: #fff;
-                text-decoration: none;
-                border-radius: 4px;
-                transition: background-color 0.3s;
+                background-color: #7a3dff; /* Purple link */
+                color: white;
             }
 
             .game-item a:hover {
-                background-color: #0056b3;
-            }
-
-            .request-text {
-                margin-top: 20px;
-                font-size: 1em;
-                text-align: center;
+                background-color: #5c2d9e; /* Darker purple link */
             }
 
             .request-text a {
-                color: #007bff;
-                text-decoration: none;
-                transition: color 0.3s;
+                color: #7a3dff;
             }
 
             .request-text a:hover {
-                color: #0056b3;
+                color: #5c2d9e;
             }
         </style>
     </head>
 
-    <body>
-        <header>
-            <h1>DS Games</h1>
-            <p>Guide to the site</p>
+    <body class="font-sans bg-black text-white dark">
+        <header
+            class="bg-purple-700 text-white text-center py-12 w-full shadow-md"
+        >
+            <h1 class="text-4xl">DS Games</h1>
+            <p class="mt-2 text-xl">Guide to the site</p>
+            <p class="text-xl font-extrabold bg-gradient-to-bl from-green-500 to-blue-800 bg-clip-text text-transparent leading-normal">2025 Edition</p>
+            <h1 >
+
         </header>
 
-        <div class="container">
-            <a href="games" class="btn-find-more">Find Games Here</a>
+        <div
+            class="container mx-auto my-12 px-6 py-8 bg-black rounded-lg shadow-lg"
+        >
+            <div class="text-center">
+                <a
+                    href="games"
+                    class="btn-find-more inline-block py-3 px-6 bg-purple-700 text-white rounded-lg text-xl hover:bg-purple-800 transition duration-300"
+                >
+                    Find Games Here
+                </a>
+            </div>
 
-            <h2>Special Games</h2>
-            <div class="game-list">
-                <div class="game-item">
-                    <h3>Games List</h3>
-                    <p>See All Games here</p>
-                    <a href="games.html" target="_blank">Play Now</a>
+            <h2 class="text-3xl text-center mt-12">Special Games</h2>
+            <div class="game-list flex flex-wrap justify-center gap-8 mt-8">
+                <div
+                    class="game-item bg-black p-6 rounded-lg w-full max-w-xs text-center shadow-lg transition-transform transform hover:translate-y-2"
+                >
+                    <h3 class="text-xl text-white mb-4">Games List</h3>
+                    <p class="text-gray-400 mb-4">See All Games here</p>
+                    <a
+                        href="games.html"
+                        class="text-white py-2 px-4 bg-purple-700 rounded-lg hover:bg-purple-800 transition duration-300"
+                        >Play Now</a
+                    >
                 </div>
-                <div class="game-item">
-                    <h3>My site</h3>
-                    <p>See my website.</p>
-                    <a href="https://dylansantwani.com" target="_blank"
+
+                <div
+                    class="game-item bg-black p-6 rounded-lg w-full max-w-xs text-center shadow-lg transition-transform transform hover:translate-y-2"
+                >
+                    <h3 class="text-xl text-white mb-4">My site</h3>
+                    <p class="text-gray-400 mb-4">See my website.</p>
+                    <a
+                        href="https://dylansantwani.com"
+                        target="_blank"
+                        class="text-white py-2 px-4 bg-purple-700 rounded-lg hover:bg-purple-800 transition duration-300"
                         >Visit</a
                     >
                 </div>
-                <div class="game-item">
-                    <h3>Watch Movies/TV</h3>
-                    <p>Watch any Movie or TV show with no ads or popups</p>
-                    <a href="https://tvplayer.pages.dev" target="_blank"
+
+                <div
+                    class="game-item bg-black p-6 rounded-lg w-full max-w-xs text-center shadow-lg transition-transform transform hover:translate-y-2"
+                >
+                    <h3 class="text-xl text-white mb-4">Watch Movies/TV</h3>
+                    <p class="text-gray-400 mb-4">
+                        Watch any Movie or TV show with no ads or popups
+                    </p>
+                    <a
+                        href="https://tvplayer.pages.dev"
+                        target="_blank"
+                        class="text-white py-2 px-4 bg-purple-700 rounded-lg hover:bg-purple-800 transition duration-300"
                         >Watch</a
                     >
                 </div>
-                <div class="game-item">
-                    <h3>See time</h3>
-                    <p>Check the schedule and time left.</p>
-                    <a href="https://nchs.online" target="_blank">Try</a>
+
+                <div
+                    class="game-item bg-black p-6 rounded-lg w-full max-w-xs text-center shadow-lg transition-transform transform hover:translate-y-2"
+                >
+                    <h3 class="text-xl text-white mb-4">See time</h3>
+                    <p class="text-gray-400 mb-4">
+                        Check the schedule and time left.
+                    </p>
+                    <a
+                        href="https://nchs.online"
+                        target="_blank"
+                        class="text-white py-2 px-4 bg-purple-700 rounded-lg hover:bg-purple-800 transition duration-300"
+                        >Try</a
+                    >
                 </div>
             </div>
-            <p class="request-text">
+
+            <p class="request-text text-center mt-8 text-lg">
                 Send game requests to
-                <a href="mailto:dylansantwani@gmail.com"
+                <a
+                    href="mailto:dylansantwani@gmail.com"
+                    class="text-purple-400 hover:text-purple-600 transition duration-300"
                     >dylansantwani@gmail.com</a
                 >
             </p>
