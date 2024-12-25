@@ -52,7 +52,34 @@
                         color: #0000ff;
                     }
                 }
+                .search-container {
+                    position: relative;
+                    width: 100%;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    padding-top: 20px;
+                }
+                .search-icon {
+                    position: absolute;
+                    left: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    pointer-events: none;
+                }
+                .search-input {
+                    width: 100%;
+                    padding: 12px 40px 12px 20px;
+                    font-size: 16px;
+                    border-radius: 25px;
+                    border: 2px solid #ccc;
+                    outline: none;
+                    background-color: #f4f4f4;
+                    transition: border 0.3s ease;
+                }
 
+                .search-input:focus {
+                    border-color: #4f46e5; /* Change border color when focused */
+                }
                 .animated-text {
                     animation: colorCycle 3s infinite;
                 }
@@ -83,7 +110,7 @@
                 }
             </style>
             <script>
-                if (window.location.href.includes(".html")) {
+                //if (window.location.href.includes(".html")) {
                     window.location.href = window.location.href.replace(
                         ".html",
                         "",
@@ -127,7 +154,45 @@
             <br /><br /><br /><br />
             <h1>Games</h1>
 
-            <h1 style="font-size: larger">2025 Edition</h1>
+            <h1
+                style="
+                    font-size: larger;
+                    font-weight: bold;
+                    animation: moveRainbowColors 2s linear infinite;
+                "
+            >
+                2025 Edition
+            </h1>
+
+            <style>
+                @keyframes moveRainbowColors {
+                    0% {
+                        color: #ff0000; /* Red */
+                    }
+                    14% {
+                        color: #ff7f00; /* Orange */
+                    }
+                    28% {
+                        color: #ffff00; /* Yellow */
+                    }
+                    42% {
+                        color: #00ff00; /* Green */
+                    }
+                    57% {
+                        color: #0000ff; /* Blue */
+                    }
+                    71% {
+                        color: #4b0082; /* Indigo */
+                    }
+                    85% {
+                        color: #8b00ff; /* Violet */
+                    }
+                    100% {
+                        color: #ff0000; /* Back to Red */
+                    }
+                }
+            </style>
+
             <p class="request-text">
                 Send game requests to
                 <a href="mailto:dylansantwani@gmail.com"
@@ -168,13 +233,54 @@
             <p class="new">New</p>
             <p class="gradient-text">Special</p>
 
-            <input
-                id="search"
-                type="text"
-                onchange="search()"
-                placeholder="Search..."
-                class="input"
-            />
+            <div
+                style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+                "
+            >
+                <div style="position: relative; width: 100%; max-width: 400px">
+                    <input
+                        id="search"
+                        type="text"
+                        onchange="search()"
+                        placeholder="Search..."
+                        style="
+                            width: 100%;
+                            padding: 12px 40px;
+                            font-size: 16px;
+                            border-radius: 25px;
+                            border: 2px solid #444;
+                            outline: none;
+                            background-color: #333;
+                            color: #fff;
+                            box-sizing: border-box;
+                            margin: 0;
+                        "
+                    />
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        stroke="#fff"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        width="20"
+                        height="20"
+                        style="
+                            position: absolute;
+                            top: 50%;
+                            left: 10px;
+                            transform: translateY(-50%);
+                        "
+                    >
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="16" y1="16" x2="21" y2="21" />
+                    </svg>
+                </div>
+            </div>
+
             <h1 style="font-size: larger"></h1>
             <br /><br /><br />
             <div id="parentcontainer" class="gamelist">
