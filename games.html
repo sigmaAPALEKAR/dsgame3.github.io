@@ -125,11 +125,12 @@
                     <button
                         onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
                         class="topbutton"
+                        style="background-color: black"
                     >
                         Scroll to Top
                     </button>
                     <button
-                        style="margin-left: 25px"
+                        style="margin-left: 25px; background-color: black"
                         onclick="window.location.href = 'https://tvplayer.pages.dev'"
                         class="topbutton gradient-text"
                     >
@@ -143,7 +144,11 @@
                         Backup Sites
                     </button>
                     <button
-                        style="margin-left: 25px; float: right"
+                        style="
+                            margin-left: 25px;
+                            float: right;
+                            margin-right: 25px;
+                        "
                         onclick="window.location.href = 'hosting-tutorial'"
                         class="topbutton"
                     >
@@ -169,21 +174,31 @@
                     0% {
                         color: #ff0000;
                     }
-                    14% {
+                    10% {
                         color: #ff7f00;
                     }
-                    28% {
+                    20% {
                         color: #ffff00;
                     }
-                    42% {
+                    30% {
                         color: #00ff00;
-                    57% {
+                    }
+                    40% {
                         color: #0000ff;
                     }
-                    71% {
+                    50% {
                         color: #4b0082;
                     }
-                    85% {
+                    60% {
+                        color: #8a2be2;
+                    }
+                    70% {
+                        color: #9400d3;
+                    }
+                    80% {
+                        color: #9932cc;
+                    }
+                    90% {
                         color: #8b00ff;
                     }
                     100% {
@@ -244,7 +259,7 @@
                     <input
                         id="search"
                         type="text"
-                        onchange="search()"
+                        oninput="search()"
                         placeholder="Search..."
                         style="
                             width: 100%;
@@ -867,6 +882,36 @@
                     See my github
                 </p>
             </div>
+            <!-- Histats.com  (div with counter) -->
+            <div id="histats_counter"></div>
+            <!-- Histats.com  START  (aync)-->
+            <script type="text/javascript">
+                var _Hasync = _Hasync || [];
+                _Hasync.push([
+                    "Histats.start",
+                    "1,4918408,4,511,95,18,00000000",
+                ]);
+                _Hasync.push(["Histats.fasi", "1"]);
+                _Hasync.push(["Histats.track_hits", ""]);
+                (function () {
+                    var hs = document.createElement("script");
+                    hs.type = "text/javascript";
+                    hs.async = true;
+                    hs.src = "//s10.histats.com/js15_as.js";
+                    (
+                        document.getElementsByTagName("head")[0] ||
+                        document.getElementsByTagName("body")[0]
+                    ).appendChild(hs);
+                })();
+            </script>
+            <noscript
+                ><a href="/" target="_blank"
+                    ><img
+                        src="//sstatic1.histats.com/0.gif?4918408&101"
+                        alt="hit counter code"
+                        border="0" /></a
+            ></noscript>
+            <!-- Histats.com  END  -->
         </body>
     </html>
 </html>
