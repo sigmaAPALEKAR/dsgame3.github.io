@@ -5,8 +5,26 @@
             <title>Untitled Document - Google Docs</title>
             <link rel="stylesheet" href="style.css" />
             <link rel="stylesheet" href="master.css" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link
+                rel="preconnect"
+                href="https://fonts.gstatic.com"
+                crossorigin
+            />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+                rel="stylesheet"
+            />
             <link rel="icon" type="image/x-icon" href="doc.ico" />
             <style>
+                html {
+                    font-family: "Barlow", serif !important;
+                    font-weight: 1000 !important;
+                    font-style: normal;
+                }
+                br {
+                    margin-bottom: 500px;
+                }
                 .topbutton {
                     border-radius: 5px;
                     width: 150px;
@@ -110,7 +128,8 @@
                 }
             </style>
             <script>
-                //if (window.location.href.includes(".html")) {
+                var dev = !window.location.href.includes("dsgame");
+                if (window.location.href.includes(".html") && !dev) {
                     window.location.href = window.location.href.replace(
                         ".html",
                         "",
@@ -210,12 +229,7 @@
                 }
             </style>
 
-            <p class="request-text">
-                Send game requests to
-                <a href="mailto:dylansantwani@gmail.com"
-                    >dylansantwani@gmail.com</a
-                >
-            </p>
+            <a href="request/" class="request-text"> Send a game request </a>
 
             <style>
                 .popular {
@@ -516,6 +530,8 @@
                 <br /><br /><br />
                 <a href="duck-life-4/" class="gamechild flash">Duck Life 4</a>
                 <br /><br /><br />
+                <a href="duck-life-5/" class="gamechild flash">Duck Life 5</a>
+                <br /><br /><br />
                 <a href="drift-boss/" class="gamechild popular">Drift Boss</a>
                 <br /><br /><br />
                 <a href="drift-hunters/" class="gamechild popular"
@@ -613,6 +629,10 @@
                 >
                 <br /><br /><br />
                 <a href="hole.io/file/" class="gamechild popular">Hole.io</a>
+                <br /><br /><br />
+                <a href="hover-racer-drive/" class="gamechild new"
+                    >Hover Racer Drive</a
+                >
                 <br /><br /><br />
                 <a href="ice-dodo/" class="gamechild popular">Ice Dodo</a>
                 <br /><br /><br />
@@ -799,6 +819,10 @@
                     >Rooftop Snipers</a
                 >
                 <br /><br /><br />
+                <a href="rooftop-snipers-2/" class="gamechild new"
+                    >Rooftop Snipers 2</a
+                >
+                <br /><br /><br />
                 <a href="RocketSoccerDerby/" class="gamechild popular"
                     >Rocket Soccer Derby</a
                 >
@@ -827,6 +851,10 @@
                     >Subway Surfers</a
                 >
                 <br /><br /><br />
+                <a href="subway-surfers-bejing/" class="gamechild new"
+                    >Subway Surfers Bejing</a
+                >
+                <br /><br /><br />
                 <a
                     href="subway-surfers-new-york-main/"
                     class="gamechild gradient-text"
@@ -852,13 +880,15 @@
                     >Super Mario 64</a
                 >
                 <br /><br /><br />
-                <a href="super-star-car-main/" class="gamechild popular"
-                    >Super Star Car</a
+                <a href="super-mario-bros/" class="gamechild emulator"
+                    >Super Mario Bros</a
                 >
                 <br /><br /><br />
                 <a href="super-star-car-main/" class="gamechild popular"
                     >Super Star Car</a
                 >
+                <br /><br /><br />
+
                 <br /><br /><br />
                 <a href="super-smash-flash/" class="gamechild new"
                     >Super Smash Flash</a
@@ -925,23 +955,9 @@
                     >World's Hardest Game 3</a
                 >
                 <br /><br /><br />
-                <p class="request-text">
-                    Send game requests to
-                    <a href="mailto:dylansantwani@gmail.com"
-                        >dylansantwani@gmail.com</a
-                    >
-                </p>
-                <p
-                    onclick="window.location.href='https://github.com/dylansantwani'"
-                    style="
-                        cursor: pointer;
-                        color: black;
-                        text-decoration: underline;
-                    "
-                    class="request-text"
-                >
-                    See my github
-                </p>
+                <a href="request/" class="request-text">
+                    Send a game request
+                </a>
             </div>
             <!-- Histats.com  (div with counter) -->
             <div id="histats_counter"></div>
