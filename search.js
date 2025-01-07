@@ -27,6 +27,7 @@ function search() {
         }
 
     }
+    
     if (eltext == "") {
         for (var i = 0; i < elements.length; i++) {
             var element = elements[i];
@@ -42,7 +43,39 @@ function search() {
         }
     }
 }
+    
 function removeAllBrNodes(parentElement) {
     const brNodes = parentElement.querySelectorAll('br');
     brNodes.forEach(br => br.remove());
+}
+function searchByClass(classname) {
+    var elements = document.getElementById('parentcontainer').children;
+
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+       if (element.classList.value.includes(classname)) {
+            element.style.display = "";
+        } else {
+            element.style.display = "none";
+        }
+    }
+    const br = document.createElement("br");
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        if (element.style.display != "none") {
+            console.log(element.tagName)
+            if (element.tagName == "A") {
+                if (!element.innerHTML.includes("<br><br>")) {
+                    element.innerHTML += "<br>"
+                    element.innerHTML += "<br>"
+                }
+
+
+
+            }
+        }
+
+    }
+    
+    
 }

@@ -252,6 +252,7 @@
                     transform: scale(0.95);
                 }
             </style>
+            <script src="search.js"></script>
 
             <div
                 style="
@@ -293,14 +294,15 @@
                     color: #d6dbb2;
                 }
             </style>
-            <script src="search.js"></script>
-            <p class="popular">Popular</p>
-            <p class="emulator">Emulated</p>
-            <p class="notworking">Not Working</p>
-            <p class="flash">Flash</p>
-            <p class="modded">Modded</p>
-            <p class="new">New</p>
-            <p class="gradient-text">Special</p>
+            <p style="cursor: pointer;" onclick="searchByClass('popular')" class="popular">Popular</p>
+            <p style="cursor: pointer;" onclick="searchByClass('emulator')" class="emulator">Emulated</p>
+            <p style="cursor: pointer;" onclick="searchByClass('notworking')" class="notworking">Not Working</p>
+            <p style="cursor: pointer;" onclick="searchByClass('flash')" class="flash">Flash</p>
+            <p style="cursor: pointer;" onclick="searchByClass('modded')" class="modded">Modded</p>
+            <p style="cursor: pointer;" onclick="searchByClass('new')" class="new">New</p>
+            <p style="cursor: pointer;" onclick="searchByClass('gradient-text')" class="gradient-text">Special</p>
+            <p style="cursor: pointer; color: white;" onclick="searchByClass('gamechild')" class="">All</p>
+
 
             <div
                 style="
@@ -808,6 +810,8 @@
                 <a href="papas-pizzaria-main/" class="gamechild flash"
                     >Papa's Pizzeria</a
                 >
+                <br /><br /><br />
+                <a href="perfect-circle/" class="gamechild new">Perfect Circle (Neal.Fun)</a>
                 <br /><br /><br />
                 <a href="polytrack/" class="gamechild new">Polytrack</a>
                 <br /><br /><br />
