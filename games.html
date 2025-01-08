@@ -1,324 +1,320 @@
 <!doctype html>
 <html>
-    <html>
-        <head>
-            <title>Untitled Document - Google Docs</title>
-            <link rel="stylesheet" href="style.css" />
-            <link rel="stylesheet" href="master.css" />
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link
-                rel="preconnect"
-                href="https://fonts.gstatic.com"
-                crossorigin
-            />
-            <link
-                href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-                rel="stylesheet"
-            />
-            <link rel="icon" type="image/x-icon" href="doc.ico" />
-            <style>
-                html {
-                    font-family: "Barlow", serif !important;
-                    font-weight: 1000 !important;
-                    font-style: normal;
-                }
-                br {
-                    margin-bottom: 500px;
-                }
-                .topbutton {
-                    border-radius: 5px;
-                    width: 150px;
-                    height: 50px;
-                    font-size: medium;
-                    border: 1px solid white;
-                    background-color: black;
-                    color: white;
-                    cursor: pointer;
-                }
-                @keyframes colorCycle {
-                    0% {
-                        color: #0000ff;
-                    }
-                    10% {
-                        color: #2b2abb;
-                    }
-                    20% {
-                        color: #3a32cc;
-                    }
-                    30% {
-                        color: #4b29d1;
-                    }
-                    40% {
-                        color: #5e1fb3;
-                    }
-                    50% {
-                        color: #6d1a9f;
-                    }
-                    60% {
-                        color: #7a0099;
-                    }
-                    70% {
-                        color: #8a007f;
-                    }
-                    80% {
-                        color: #9b009e;
-                    }
-                    90% {
-                        color: #9d1a8f;
-                    }
-                    100% {
-                        color: #0000ff;
-                    }
-                }
-                .search-container {
-                    position: relative;
-                    width: 100%;
-                    max-width: 400px;
-                    margin: 0 auto;
-                    padding-top: 20px;
-                }
-                .search-icon {
-                    position: absolute;
-                    left: 15px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    pointer-events: none;
-                }
-                .search-input {
-                    width: 100%;
-                    padding: 12px 40px 12px 20px;
-                    font-size: 16px;
-                    border-radius: 25px;
-                    border: 2px solid #ccc;
-                    outline: none;
-                    background-color: #f4f4f4;
-                    transition: border 0.3s ease;
-                }
+<html>
 
-                .search-input:focus {
-                    border-color: #4f46e5;
-                }
-                .animated-text {
-                    animation: colorCycle 3s infinite;
-                }
-                @keyframes gradientMove {
-                    0% {
-                        background-position: 0% 50%;
-                    }
-                    50% {
-                        background-position: 100% 50%;
-                    }
-                    100% {
-                        background-position: 0% 50%;
-                    }
-                }
+<head>
+    <title>Untitled Document - Google Docs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="doc.ico" />
+    <style>
+        html {
+            font-family: "Barlow", serif !important;
+            font-weight: 1000 !important;
+            font-style: normal;
+        }
 
-                .gradient-text {
-                    color: transparent;
-                    background: linear-gradient(
-                        to right,
-                        #4f46e5,
-                        #9333ea,
-                        #ec4899
-                    );
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    background-size: 200% 100%;
-                    animation: gradientMove 1.5s linear infinite;
-                }
-            </style>
-            <script>
-                var dev = !window.location.href.includes("dsgame");
-                if (window.location.href.includes(".html") && !dev) {
-                    window.location.href = window.location.href.replace(
-                        ".html",
-                        "",
-                    );
-                }
-            </script>
-        </head>
+        br {
+            margin-bottom: 500px;
+        }
 
-        <body>
-            <div class="nav">
-                <ul>
-                    <button
-                        onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
-                        class="topbutton"
-                        style="background-color: black"
-                    >
-                        Scroll to Top
-                    </button>
-                    <button
-                        style="
+        .topbutton {
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+            font-size: medium;
+            border: 1px solid white;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        @keyframes colorCycle {
+            0% {
+                color: #0000ff;
+            }
+
+            10% {
+                color: #2b2abb;
+            }
+
+            20% {
+                color: #3a32cc;
+            }
+
+            30% {
+                color: #4b29d1;
+            }
+
+            40% {
+                color: #5e1fb3;
+            }
+
+            50% {
+                color: #6d1a9f;
+            }
+
+            60% {
+                color: #7a0099;
+            }
+
+            70% {
+                color: #8a007f;
+            }
+
+            80% {
+                color: #9b009e;
+            }
+
+            90% {
+                color: #9d1a8f;
+            }
+
+            100% {
+                color: #0000ff;
+            }
+        }
+
+        .search-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 40px 12px 20px;
+            font-size: 16px;
+            border-radius: 25px;
+            border: 2px solid #ccc;
+            outline: none;
+            background-color: #f4f4f4;
+            transition: border 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: #4f46e5;
+        }
+
+        .animated-text {
+            animation: colorCycle 3s infinite;
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .gradient-text {
+            color: transparent;
+            background: linear-gradient(to right,
+                    #4f46e5,
+                    #9333ea,
+                    #ec4899);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 200% 100%;
+            animation: gradientMove 1.5s linear infinite;
+        }
+    </style>
+    <script>
+        var dev = !window.location.href.includes("dsgame");
+        if (window.location.href.includes(".html") && !dev) {
+            window.location.href = window.location.href.replace(
+                ".html",
+                "",
+            );
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="topbutton"
+                style="background-color: black">
+                Scroll to Top
+            </button>
+            <button style="
                             margin-left: 25px;
                             background-color: black !important;
-                        "
-                        onclick="window.location.href = 'https://tvplayer.pages.dev'"
-                        class="topbutton gradient-text"
-                    >
-                        Watch
-                    </button>
-                    <button
-                        style="margin-left: 25px; float: right"
-                        onclick="window.location.href = 'backup'"
-                        class="topbutton"
-                    >
-                        Backup Sites
-                    </button>
-                    <button
-                        style="
+                        " onclick="window.location.href = 'https://tvplayer.pages.dev'"
+                class="topbutton gradient-text">
+                Watch
+            </button>
+            <button style="margin-left: 25px; float: right" onclick="window.location.href = 'backup'" class="topbutton">
+                Backup Sites
+            </button>
+            <button style="
                             margin-left: 25px;
                             float: right;
                             margin-right: 25px;
-                        "
-                        onclick="window.location.href = 'hosting-tutorial'"
-                        class="topbutton"
-                    >
-                        Host
-                    </button>
-                </ul>
-            </div>
-            <br /><br /><br /><br />
-            <h1>Games</h1>
+                        " onclick="window.location.href = 'hosting-tutorial'" class="topbutton">
+                Host
+            </button>
+        </ul>
+    </div>
+    <br /><br /><br /><br />
+    <h1>Games</h1>
 
-            <h1
-                style="
+    <h1 style="
                     font-size: larger;
                     font-weight: bold;
                     animation: moveRainbowColors 2s linear infinite;
-                "
-            >
-                2025 Edition
-            </h1>
+                ">
+        2025 Edition
+    </h1>
 
-            <style>
-                @keyframes moveRainbowColors {
-                    0% {
-                        color: #ff0000;
-                    }
-                    10% {
-                        color: #ff7f00;
-                    }
-                    20% {
-                        color: #ffff00;
-                    }
-                    30% {
-                        color: #00ff00;
-                    }
-                    40% {
-                        color: #0000ff;
-                    }
-                    50% {
-                        color: #4b0082;
-                    }
-                    60% {
-                        color: #8a2be2;
-                    }
-                    70% {
-                        color: #9400d3;
-                    }
-                    80% {
-                        color: #9932cc;
-                    }
-                    90% {
-                        color: #8b00ff;
-                    }
-                    100% {
-                        color: #ff0000;
-                    }
-                }
+    <style>
+        @keyframes moveRainbowColors {
+            0% {
+                color: #ff0000;
+            }
 
-                .top {
-                    padding: 10px 20px;
-                    font-size: 16px;
-                    font-weight: bold;
-                    color: #ffffff;
-                    background-color: #333333;
-                    border: 2px solid #444444;
-                    border-radius: 8px;
-                    cursor: pointer;
-                    transition:
-                        background-color 0.3s,
-                        transform 0.2s;
-                }
+            10% {
+                color: #ff7f00;
+            }
 
-                .top:hover {
-                    background-color: #555555;
-                    transform: scale(1.05);
-                }
+            20% {
+                color: #ffff00;
+            }
 
-                .top:active {
-                    background-color: #222222;
-                    transform: scale(0.95);
-                }
-            </style>
-            <script src="search.js"></script>
+            30% {
+                color: #00ff00;
+            }
 
-            <div
-                style="
+            40% {
+                color: #0000ff;
+            }
+
+            50% {
+                color: #4b0082;
+            }
+
+            60% {
+                color: #8a2be2;
+            }
+
+            70% {
+                color: #9400d3;
+            }
+
+            80% {
+                color: #9932cc;
+            }
+
+            90% {
+                color: #8b00ff;
+            }
+
+            100% {
+                color: #ff0000;
+            }
+        }
+
+        .top {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #333333;
+            border: 2px solid #444444;
+            border-radius: 8px;
+            cursor: pointer;
+            transition:
+                background-color 0.3s,
+                transform 0.2s;
+        }
+
+        .top:hover {
+            background-color: #555555;
+            transform: scale(1.05);
+        }
+
+        .top:active {
+            background-color: #222222;
+            transform: scale(0.95);
+        }
+    </style>
+    <script src="search.js"></script>
+
+    <div style="
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                "
-            >
-                <button
-                    onclick="window.location.href = 'request'"
-                    style="text-align: center; margin: 0"
-                    class="top"
-                >
-                    Send a game request
-                </button>
-            </div>
+                ">
+        <button onclick="window.location.href = 'request'" style="text-align: center; margin: 0" class="top">
+            Send a game request
+        </button>
+    </div>
 
-            <style>
-                .popular {
-                    color: plum;
-                }
+    <style>
+        .popular {
+            color: plum;
+        }
 
-                .emulator {
-                    color: #6290c3;
-                }
+        .emulator {
+            color: #6290c3;
+        }
 
-                .notworking {
-                    color: #ff0000;
-                }
-                .flash {
-                    color: #dd6e42;
-                }
+        .notworking {
+            color: #ff0000;
+        }
 
-                .modded {
-                    color: #f1ffe7;
-                }
+        .flash {
+            color: #dd6e42;
+        }
 
-                .new {
-                    color: #d6dbb2;
-                }
-            </style>
-            <p style="cursor: pointer;" onclick="searchByClass('popular')" class="popular">Popular</p>
-            <p style="cursor: pointer;" onclick="searchByClass('emulator')" class="emulator">Emulated</p>
-            <p style="cursor: pointer;" onclick="searchByClass('notworking')" class="notworking">Not Working</p>
-            <p style="cursor: pointer;" onclick="searchByClass('flash')" class="flash">Flash</p>
-            <p style="cursor: pointer;" onclick="searchByClass('modded')" class="modded">Modded</p>
-            <p style="cursor: pointer;" onclick="searchByClass('new')" class="new">New</p>
-            <p style="cursor: pointer;" onclick="searchByClass('gradient-text')" class="gradient-text">Special</p>
-            <p style="cursor: pointer; color: white;" onclick="searchByClass('gamechild')" class="">All</p>
+        .modded {
+            color: #f1ffe7;
+        }
+
+        .new {
+            color: #d6dbb2;
+        }
+    </style>
+    <p style="cursor: pointer;" onclick="searchByClass('popular')" class="popular">Popular</p>
+    <p style="cursor: pointer;" onclick="searchByClass('emulator')" class="emulator">Emulated</p>
+    <p style="cursor: pointer;" onclick="searchByClass('notworking')" class="notworking">Not Working</p>
+    <p style="cursor: pointer;" onclick="searchByClass('flash')" class="flash">Flash</p>
+    <p style="cursor: pointer;" onclick="searchByClass('modded')" class="modded">Modded</p>
+    <p style="cursor: pointer;" onclick="searchByClass('new')" class="new">New</p>
+    <p style="cursor: pointer;" onclick="searchByClass('gradient-text')" class="gradient-text">Special</p>
+    <p style="cursor: pointer; color: white;" onclick="searchByClass('gamechild')" class="">All</p>
 
 
-            <div
-                style="
+    <div style="
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     margin: 0;
-                "
-            >
-                <div style="position: relative; width: 100%; max-width: 400px">
-                    <input
-                        id="search"
-                        type="text"
-                        oninput="search()"
-                        placeholder="Search..."
-                        style="
+                ">
+        <div style="position: relative; width: 100%; max-width: 400px">
+            <input id="search" type="text" oninput="search()" placeholder="Search..." style="
                             width: 100%;
                             padding: 12px 40px;
                             font-size: 16px;
@@ -329,726 +325,454 @@
                             color: #fff;
                             box-sizing: border-box;
                             margin: 0;
-                        "
-                    />
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        stroke="#fff"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        width="20"
-                        height="20"
-                        style="
+                        " />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" viewBox="0 0 24 24" stroke-width="2"
+                width="20" height="20" style="
                             position: absolute;
                             top: 50%;
                             left: 10px;
                             transform: translateY(-50%);
-                        "
-                    >
-                        <circle cx="11" cy="11" r="8" />
-                        <line x1="16" y1="16" x2="21" y2="21" />
-                    </svg>
-                </div>
-            </div>
+                        ">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="16" y1="16" x2="21" y2="21" />
+            </svg>
+        </div>
+    </div>
 
-            <h1 style="font-size: larger"></h1>
-            <br /><br /><br />
-            <div id="parentcontainer" class="gamelist">
-                <a href="https://nchs.online/" class="gamechild gradient-text"
-                    >Time Until End of Period</a
-                >
-                <br /><br /><br />
-                <a
-                    href="https://tvplayer.pages.dev"
-                    class="gamechild gradient-text"
-                    >Watch TV/Movies</a
-                >
-                <br /><br /><br />
-                <a
-                    href="https://premiumplayer.vercel.app"
-                    class="gamechild gradient-text"
-                    >Try Paid Player</a
-                >
-                <br /><br /><br />
+    <h1 style="font-size: larger"></h1>
+    <br /><br /><br />
+    <div id="parentcontainer" class="gamelist">
+        <a href="https://nchs.online/" class="gamechild gradient-text">Time Until End of Period</a>
+        <br /><br /><br />
+        <a href="https://tvplayer.pages.dev" class="gamechild gradient-text">Watch TV/Movies</a>
+        <br /><br /><br />
+        <a href="https://premiumplayer.vercel.app" class="gamechild gradient-text">Try Paid Player</a>
+        <br /><br /><br />
 
-                <a
-                    href="game2/10-minutes-till-dawn/"
-                    class="gamechild notworking"
-                    >10 Minutes Till Dawn</a
-                >
-                <br /><br /><br />
-                <a href="game2/100ng" class="gamechild">100ng</a>
-                <br /><br /><br />
-                <a href="game2/1v1lol" class="gamechild">1v1LOL</a>
-                <br /><br /><br />
-                <a href="game2/1v1space" class="gamechild">1v1Space</a>
-                <br /><br /><br />
-                <a href="game2/2048-multitask" class="gamechild"
-                    >2048 Multitask</a
-                >
-                <br /><br /><br />
-                <a href="game2/2048" class="gamechild popular">2048</a>
-                <br /><br /><br />
-                <a
-                    href="4th-and-goal-2022-main/4th-and-goal-2022-main/"
-                    class="gamechild popular"
-                    >4th and Goal</a
-                >
-                <br /><br /><br />
+        <a href="game2/10-minutes-till-dawn/" class="gamechild notworking">10 Minutes Till Dawn</a>
+        <br /><br /><br />
+        <a href="game2/100ng" class="gamechild">100ng</a>
+        <br /><br /><br />
+        <a href="game2/1v1lol" class="gamechild">1v1LOL</a>
+        <br /><br /><br />
+        <a href="game2/1v1space" class="gamechild">1v1Space</a>
+        <br /><br /><br />
+        <a href="game2/2048-multitask" class="gamechild">2048 Multitask</a>
+        <br /><br /><br />
+        <a href="game2/2048" class="gamechild popular">2048</a>
+        <br /><br /><br />
+        <a href="4th-and-goal-2022-main/4th-and-goal-2022-main/" class="gamechild popular">4th and Goal</a>
+        <br /><br /><br />
 
-                <a href="game2/9007199254740992" class="gamechild"
-                    >9007199254740992</a
-                >
-                <br /><br /><br />
-                <a href="game2/a-dance-of-fire-and-ice" class="gamechild"
-                    >A Dance of Fire and Ice</a
-                >
-                <br /><br /><br />
-                <a href="game2/achievementunlocked" class="gamechild"
-                    >Achievement Unlocked</a
-                >
-                <br /><br /><br />
-                <a href="game2/adarkroom" class="gamechild popular"
-                    >A Dark Room</a
-                >
-                <br /><br /><br />
-                <a href="game2/adrenalinechallenge" class="gamechild"
-                    >Adrenaline Challenge</a
-                >
-                <br /><br /><br />
-                <a href="adrenalinechallenge2/" class="gamechild flash"
-                    >Adrenaline Challenge (New)</a
-                >
-                <br /><br /><br />
-                <a href="game2/adventure-drivers" class="gamechild"
-                    >Adventure Drivers</a
-                >
-                <br /><br /><br />
-                <a href="game2/ages-of-conflict" class="gamechild"
-                    >Ages of Conflict</a
-                >
-                <br /><br /><br />
-                <a href="game2/alienhominid" class="gamechild">Alien Hominid</a>
-                <br /><br /><br />
-                <a href="game2/align-4" class="gamechild">Align 4</a>
-                <br /><br /><br />
-                <a href="game2/amidst-the-clouds" class="gamechild"
-                    >Amidst the Clouds</a
-                >
-                <br /><br /><br />
-                <a href="game2/among-us" class="gamechild notworking"
-                    >Among Us</a
-                >
-                <br /><br /><br />
-                <a href="game2/angry-sharks" class="gamechild">Angry Sharks</a>
-                <br /><br /><br />
-                <a href="angrybirds/Game/" class="gamechild flash"
-                    >Angry Birds</a
-                >
-                <br /><br /><br />
-                <a href="game2/aquapark-slides" class="gamechild"
-                    >Aquapark Slides</a
-                >
-                <br /><br /><br />
-                <a href="game2/astray" class="gamechild">Astray</a>
-                <br /><br /><br />
-                <a href="game2/avalanche" class="gamechild">Avalanche</a>
-                <br /><br /><br />
-                <a href="game2/awesometanks2" class="gamechild popular"
-                    >Awesome Tanks 2</a
-                >
-                <br /><br /><br />
-                <a href="game2/backrooms" class="gamechild">Backrooms</a>
-                <br /><br /><br />
-                <a href="basketball-stars/" class="gamechild popular"
-                    >Basketball Stars</a
-                >
-                <br /><br /><br />
-                <a href="basket-bros/" class="gamechild">Basket Bros</a>
-                <br /><br /><br />
-                <a href="basket-random/" class="gamechild popular"
-                    >Basket Random</a
-                >
-                <br /><br /><br />
-                <a href="big-tower-tiny-square/" class="gamechild popular"
-                    >Big Tower Tiny Square</a
-                >
-                <br /><br /><br />
+        <a href="game2/9007199254740992" class="gamechild">9007199254740992</a>
+        <br /><br /><br />
+        <a href="game2/a-dance-of-fire-and-ice" class="gamechild">A Dance of Fire and Ice</a>
+        <br /><br /><br />
+        <a href="game2/achievementunlocked" class="gamechild">Achievement Unlocked</a>
+        <br /><br /><br />
+        <a href="game2/adarkroom" class="gamechild popular">A Dark Room</a>
+        <br /><br /><br />
+        <a href="game2/adrenalinechallenge" class="gamechild">Adrenaline Challenge</a>
+        <br /><br /><br />
+        <a href="adrenalinechallenge2/" class="gamechild flash">Adrenaline Challenge (New)</a>
+        <br /><br /><br />
+        <a href="game2/adventure-drivers" class="gamechild">Adventure Drivers</a>
+        <br /><br /><br />
+        <a href="game2/ages-of-conflict" class="gamechild">Ages of Conflict</a>
+        <br /><br /><br />
+        <a href="game2/alienhominid" class="gamechild">Alien Hominid</a>
+        <br /><br /><br />
+        <a href="game2/align-4" class="gamechild">Align 4</a>
+        <br /><br /><br />
+        <a href="game2/amidst-the-clouds" class="gamechild">Amidst the Clouds</a>
+        <br /><br /><br />
+        <a href="game2/among-us" class="gamechild notworking">Among Us</a>
+        <br /><br /><br />
+        <a href="game2/angry-sharks" class="gamechild">Angry Sharks</a>
+        <br /><br /><br />
+        <a href="angrybirds/Game/" class="gamechild flash">Angry Birds</a>
+        <br /><br /><br />
+        <a href="game2/aquapark-slides" class="gamechild">Aquapark Slides</a>
+        <br /><br /><br />
+        <a href="game2/astray" class="gamechild">Astray</a>
+        <br /><br /><br />
+        <a href="game2/avalanche" class="gamechild">Avalanche</a>
+        <br /><br /><br />
+        <a href="game2/awesometanks2" class="gamechild popular">Awesome Tanks 2</a>
+        <br /><br /><br />
+        <a href="game2/backrooms" class="gamechild">Backrooms</a>
+        <br /><br /><br />
+        <a href="basketball-stars/" class="gamechild popular">Basketball Stars</a>
+        <br /><br /><br />
+        <a href="basket-bros/" class="gamechild">Basket Bros</a>
+        <br /><br /><br />
+        <a href="basket-random/" class="gamechild popular">Basket Random</a>
+        <br /><br /><br />
+        <a href="big-tower-tiny-square/" class="gamechild popular">Big Tower Tiny Square</a>
+        <br /><br /><br />
 
-                <a href="big-ice-tower-tiny-square/" class="gamechild modded"
-                    >Big Ice Tower Tiny Square</a
-                >
-                <br /><br /><br />
-                <a href="bob-the-robber-2-main/" class="gamechild popular"
-                    >Bob the Robber 2
-                </a>
-                <br /><br /><br />
-                <a href="BobTheRobber4-gh-pages/" class="gamechild flash"
-                    >Bob the Robber 4
-                </a>
-                <br /><br /><br />
-                <a href="game2/bad-ice-cream" class="gamechild"
-                    >Bad Ice Cream</a
-                >
-                <br /><br /><br />
-                <a href="game2/bad-ice-cream-2" class="gamechild"
-                    >Bad Ice Cream 2</a
-                >
-                <br /><br /><br />
-                <a href="game2/bad-ice-cream-3" class="gamechild"
-                    >Bad Ice Cream 3</a
-                >
-                <br /><br /><br />
-                <a href="game2/baldis-basics" class="gamechild notworking"
-                    >Baldi's Basics</a
-                >
-                <br /><br /><br />
-                <a href="bitlife/" class="gamechild new">Bitlife</a>
-                <br /><br /><br />
-                <a href="block-blast/" class="gamechild popular">Block Blast</a>
-                <br /><br /><br />
-                <a href="breakout/" class="gamechild flash">Breakout</a>
-                <br /><br /><br />
-                <a href="browserkiller/" class="gamechild new"
-                    >Browser Killer</a
-                >
-                <br /><br /><br />
-                <a href="bloons-tower-defense/" class="gamechild popular"
-                    >Bloons Tower Defense 3</a
-                >
-                <br /><br /><br />
-                <a href="bottle-flip-3d/" class="gamechild new"
-                    >Bottle Flip 3D</a
-                >
-                <br /><br /><br />
-                <a href="bubble-tower-3d/" class="gamechild new"
-                    >Bubble Tower 3D</a
-                >
-                <br /><br /><br />
-                <a
-                    href="http://crtls.dylansantwani.com:8390/"
-                    class="gamechild notworking"
-                    >Chat-GPT Unrestricted (Beta)</a
-                >
-                <br /><br /><br />
-                <a href="candy-crush/" class="gamechild popular">Candy Crush</a>
-                <br /><br /><br />
-                <a href="cut-the-rope-main/" class="gamechild new"
-                    >Cut the Rope</a
-                >
-                <br /><br /><br />
-                <a href="chess/" class="gamechild new">Chess</a>
-                <br /><br /><br />
-                <a href="clicker-heroes-fixed/" class="gamechild new"
-                    >Clicker Heroes</a
-                >
-                <br /><br /><br />
-                <a href="game2/cluster-rush" class="gamechild">Cluster Rush</a>
-                <br /><br /><br />
-                <a href="game2/cookie-clicker" class="gamechild popular"
-                    >Cookie Clicker</a
-                >
-                <br /><br /><br />
-                <a href="cookie-clicker-2" class="gamechild new"
-                    >Cookie Clicker 2</a
-                >
-                <br /><br /><br />
-                <a href="game2/crossyroad" class="gamechild popular"
-                    >Crossy Road</a
-                >
-                <br /><br /><br />
-                <a href="dino-chrome-io-main/" class="gamechild new">Dino</a>
-                <br /><br /><br />
-                <a href="dig-to-china/" class="gamechild flash">Dig to China</a>
-                <br /><br /><br />
-                <a href="ducklife/" class="gamechild popular">Duck Life</a>
-                <br /><br /><br />
-                <a href="duck-life-2/" class="gamechild flash">Duck Life 2</a>
-                <br /><br /><br />
-                <a href="ducklife3/" class="gamechild flash">Duck Life 3</a>
-                <br /><br /><br />
-                <a href="duck-life-4/" class="gamechild flash">Duck Life 4</a>
-                <br /><br /><br />
-                <a href="duck-life-5/" class="gamechild flash">Duck Life 5</a>
-                <br /><br /><br />
-                <a href="drift-boss/" class="gamechild popular">Drift Boss</a>
-                <br /><br /><br />
-                <a href="drift-hunters/" class="gamechild popular"
-                    >Drift Hunters</a
-                >
-                <br /><br /><br />
-                <a href="doodlejump/" class="gamechild popular">Doodle Jump</a>
-                <br /><br /><br />
-                <a href="doom/" class="gamechild flash">Doom</a>
-                <br /><br /><br />
-                <a href="flappybird/bird.html" class="gamechild popular"
-                    >Flappy Bird</a
-                >
-                <br /><br /><br />
-                <a
-                    href="Five-Nights-at-Freddys-Web-main/"
-                    class="gamechild popular"
-                    >FNAF Web</a
-                >
-                <br /><br /><br />
-                <a href="fnaf-2-main/" class="gamechild">FNAF 2</a>
-                <br /><br /><br />
-                <a href="fnaf-4-main/" class="gamechild">FNAF 4</a>
-                <br /><br /><br />
-                <a href="fnaf4-web-main/" class="gamechild new">FNAF 4 (Web)</a>
-                <br /><br /><br />
-                <a href="game2/fluidsimulator" class="gamechild"
-                    >Fluid Simulator</a
-                >
-                <br /><br /><br />
-                <a
-                    href="game2/fireboywatergirlforesttemple"
-                    class="gamechild popular"
-                    >Fireboy and Watergirl</a
-                >
-                <br /><br /><br />
-                <a href="final-grade/" class="gamechild gradient-text"
-                    >Final Grade Calculator</a
-                >
-                <br /><br /><br />
-                <a href="footballbros.io/" class="gamechild">Football Bros</a>
-                <br /><br /><br />
-                <a
-                    href="https://pagesgba.pages.dev/"
-                    class="gamechild gradient-text"
-                    >GBA Emulator</a
-                >
-                <br /><br /><br />
-                <a href="fruit-ninja/" class="gamechild popular">Fruit Ninja</a>
-                <br /><br /><br />
-                <a href="game2/geometrydash" class="gamechild flash"
-                    >Geometry Dash</a
-                >
+        <a href="big-ice-tower-tiny-square/" class="gamechild modded">Big Ice Tower Tiny Square</a>
+        <br /><br /><br />
+        <a href="bob-the-robber-2-main/" class="gamechild popular">Bob the Robber 2
+        </a>
+        <br /><br /><br />
+        <a href="BobTheRobber4-gh-pages/" class="gamechild flash">Bob the Robber 4
+        </a>
+        <br /><br /><br />
+        <a href="game2/bad-ice-cream" class="gamechild">Bad Ice Cream</a>
+        <br /><br /><br />
+        <a href="game2/bad-ice-cream-2" class="gamechild">Bad Ice Cream 2</a>
+        <br /><br /><br />
+        <a href="game2/bad-ice-cream-3" class="gamechild">Bad Ice Cream 3</a>
+        <br /><br /><br />
+        <a href="game2/baldis-basics" class="gamechild notworking">Baldi's Basics</a>
+        <br /><br /><br />
+        <a href="bitlife/" class="gamechild new">Bitlife</a>
+        <br /><br /><br />
+        <a href="block-blast/" class="gamechild popular">Block Blast</a>
+        <br /><br /><br />
+        <a href="breakout/" class="gamechild flash">Breakout</a>
+        <br /><br /><br />
+        <a href="browserkiller/" class="gamechild new">Browser Killer</a>
+        <br /><br /><br />
+        <a href="bloons-tower-defense/" class="gamechild popular">Bloons Tower Defense 3</a>
+        <br /><br /><br />
+        <a href="bottle-flip-3d/" class="gamechild new">Bottle Flip 3D</a>
+        <br /><br /><br />
+        <a href="bubble-tower-3d/" class="gamechild new">Bubble Tower 3D</a>
+        <br /><br /><br />
+        <a href="http://crtls.dylansantwani.com:8390/" class="gamechild notworking">Chat-GPT Unrestricted (Beta)</a>
+        <br /><br /><br />
+        <a href="candy-crush/" class="gamechild popular">Candy Crush</a>
+        <br /><br /><br />
+        <a href="cut-the-rope-main/" class="gamechild new">Cut the Rope</a>
+        <br /><br /><br />
+        <a href="chess/" class="gamechild new">Chess</a>
+        <br /><br /><br />
+        <a href="clicker-heroes-fixed/" class="gamechild new">Clicker Heroes</a>
+        <br /><br /><br />
+        <a href="game2/cluster-rush" class="gamechild">Cluster Rush</a>
+        <br /><br /><br />
+        <a href="game2/cookie-clicker" class="gamechild popular">Cookie Clicker</a>
+        <br /><br /><br />
+        <a href="cookie-clicker-2" class="gamechild new">Cookie Clicker 2</a>
+        <br /><br /><br />
+        <a href="game2/crossyroad" class="gamechild popular">Crossy Road</a>
+        <br /><br /><br />
+        <a href="dino-chrome-io-main/" class="gamechild new">Dino</a>
+        <br /><br /><br />
+        <a href="dig-to-china/" class="gamechild flash">Dig to China</a>
+        <br /><br /><br />
+        <a href="ducklife/" class="gamechild popular">Duck Life</a>
+        <br /><br /><br />
+        <a href="duck-life-2/" class="gamechild flash">Duck Life 2</a>
+        <br /><br /><br />
+        <a href="ducklife3/" class="gamechild flash">Duck Life 3</a>
+        <br /><br /><br />
+        <a href="duck-life-4/" class="gamechild flash">Duck Life 4</a>
+        <br /><br /><br />
+        <a href="duck-life-5/" class="gamechild flash">Duck Life 5</a>
+        <br /><br /><br />
+        <a href="drift-boss/" class="gamechild popular">Drift Boss</a>
+        <br /><br /><br />
+        <a href="drift-hunters/" class="gamechild popular">Drift Hunters</a>
+        <br /><br /><br />
+        <a href="doodlejump/" class="gamechild popular">Doodle Jump</a>
+        <br /><br /><br />
+        <a href="doom/" class="gamechild flash">Doom</a>
+        <br /><br /><br />
+        <a href="flappybird/bird.html" class="gamechild popular">Flappy Bird</a>
+        <br /><br /><br />
+        <a href="Five-Nights-at-Freddys-Web-main/" class="gamechild popular">FNAF Web</a>
+        <br /><br /><br />
+        <a href="fnaf-2-main/" class="gamechild">FNAF 2</a>
+        <br /><br /><br />
+        <a href="fnaf-4-main/" class="gamechild">FNAF 4</a>
+        <br /><br /><br />
+        <a href="fnaf4-web-main/" class="gamechild new">FNAF 4 (Web)</a>
+        <br /><br /><br />
+        <a href="game2/fluidsimulator" class="gamechild">Fluid Simulator</a>
+        <br /><br /><br />
+        <a href="game2/fireboywatergirlforesttemple" class="gamechild popular">Fireboy and Watergirl</a>
+        <br /><br /><br />
+        <a href="final-grade/" class="gamechild gradient-text">Final Grade Calculator</a>
+        <br /><br /><br />
+        <a href="footballbros.io/" class="gamechild">Football Bros</a>
+        <br /><br /><br />
+        <a href="https://pagesgba.pages.dev/" class="gamechild gradient-text">GBA Emulator</a>
+        <br /><br /><br />
+        <a href="fruit-ninja/" class="gamechild popular">Fruit Ninja</a>
+        <br /><br /><br />
+        <a href="game2/geometrydash" class="gamechild flash">Geometry Dash</a>
 
-                <br /><br /><br />
-                <a href="real-geometry-dash/" class="gamechild gradient-text"
-                    >Geometry Dash (Lite)</a
-                >
-                <br /><br /><br />
+        <br /><br /><br />
+        <a href="real-geometry-dash/" class="gamechild gradient-text">Geometry Dash (Lite)</a>
+        <br /><br /><br />
 
-                <a href="GetawayShootout.github.io-main/" class="gamechild new"
-                    >Getway Shootout</a
-                >
-                <br /><br /><br />
-                <a href="game2/google-snake" class="gamechild popular"
-                    >Google Snake</a
-                >
-                <br /><br /><br />
-                <a href="henrystickminbank/" class="gamechild flash"
-                    >Henry Stickmin Breaking the Bank</a
-                >
-                <br /><br /><br />
-                <a href="henrystickminprison/" class="gamechild flash"
-                    >Henry Stickmin Escaping the Prison</a
-                >
-                <br /><br /><br />
-                <a href="henrystickmincomplex/" class="gamechild flash"
-                    >Henry Stickmin Fleeing the Complex</a
-                >
-                <br /><br /><br />
-                <a href="henrystickminpit/" class="gamechild flash"
-                    >Henry Stickmin Crossing the Pit</a
-                >
-                <br /><br /><br />
-                <a href="henrystickminairship/" class="gamechild flash"
-                    >Henry Stickmin Infiltrating the Airship</a
-                >
-                <br /><br /><br />
-                <a href="henrystickmindiamond/" class="gamechild flash"
-                    >Henry Stickmin Stealing the Diamond</a
-                >
-                <br /><br /><br />
-                <a href="hill-climb-racing-2-main/" class="gamechild popular"
-                    >Hill Climb Racing</a
-                >
-                <br /><br /><br />
-                <a href="hole.io/file/" class="gamechild popular">Hole.io</a>
-                <br /><br /><br />
-                <a href="hover-racer-drive/" class="gamechild new"
-                    >Hover Racer Drive</a
-                >
-                <br /><br /><br />
-                <a href="ice-dodo/" class="gamechild popular">Ice Dodo</a>
-                <br /><br /><br />
-                <a href="icy-purple-head-2/" class="gamechild new"
-                    >Icy Purple Head 2</a
-                >
-                <br /><br /><br />
-                <a href="icy-purple-head-3/" class="gamechild new"
-                    >Icy Purple Head 3</a
-                >
-                <br /><br /><br />
-                <a href="idle-breakout/" class="gamechild popular"
-                    >Idle Breakout</a
-                >
-                <br /><br /><br />
-                <a href="idkkk" class="gamechild">Delta</a>
-                <br /><br /><br />
-                <a href="game2/jetpack-joyride" class="gamechild popular"
-                    >Jetpack Joyride</a
-                >
-                <br /><br /><br />
-                <a
-                    href="http://crtls.dylansantwani.com:8443"
-                    class="gamechild gradient-text"
-                    >Lightspeed Bypasser</a
-                >
-                <br /><br /><br />
-                <a href="learn-to-fly-main/" class="gamechild flash"
-                    >Learn To Fly</a
-                >
-                <br /><br /><br />
-                <a href="learn-to-fly-3/" class="gamechild new"
-                    >Learn To Fly 3</a
-                >
-                <br /><br /><br />
+        <a href="GetawayShootout.github.io-main/" class="gamechild new">Getway Shootout</a>
+        <br /><br /><br />
+        <a href="game2/google-snake" class="gamechild popular">Google Snake</a>
+        <br /><br /><br />
+        <a href="henrystickminbank/" class="gamechild flash">Henry Stickmin Breaking the Bank</a>
+        <br /><br /><br />
+        <a href="henrystickminprison/" class="gamechild flash">Henry Stickmin Escaping the Prison</a>
+        <br /><br /><br />
+        <a href="henrystickmincomplex/" class="gamechild flash">Henry Stickmin Fleeing the Complex</a>
+        <br /><br /><br />
+        <a href="henrystickminpit/" class="gamechild flash">Henry Stickmin Crossing the Pit</a>
+        <br /><br /><br />
+        <a href="henrystickminairship/" class="gamechild flash">Henry Stickmin Infiltrating the Airship</a>
+        <br /><br /><br />
+        <a href="henrystickmindiamond/" class="gamechild flash">Henry Stickmin Stealing the Diamond</a>
+        <br /><br /><br />
+        <a href="hill-climb-racing-2-main/" class="gamechild popular">Hill Climb Racing</a>
+        <br /><br /><br />
+        <a href="hole.io/file/" class="gamechild popular">Hole.io</a>
+        <br /><br /><br />
+        <a href="hover-racer-drive/" class="gamechild new">Hover Racer Drive</a>
+        <br /><br /><br />
+        <a href="ice-dodo/" class="gamechild popular">Ice Dodo</a>
+        <br /><br /><br />
+        <a href="icy-purple-head-2/" class="gamechild new">Icy Purple Head 2</a>
+        <br /><br /><br />
+        <a href="icy-purple-head-3/" class="gamechild new">Icy Purple Head 3</a>
+        <br /><br /><br />
+        <a href="idle-breakout/" class="gamechild popular">Idle Breakout</a>
+        <br /><br /><br />
+        <a href="idkkk" class="gamechild">Delta</a>
+        <br /><br /><br />
+        <a href="game2/jetpack-joyride" class="gamechild popular">Jetpack Joyride</a>
+        <br /><br /><br />
+        <a href="http://crtls.dylansantwani.com:8443" class="gamechild gradient-text">Lightspeed Bypasser</a>
+        <br /><br /><br />
+        <a href="learn-to-fly-main/" class="gamechild flash">Learn To Fly</a>
+        <br /><br /><br />
+        <a href="learn-to-fly-3/" class="gamechild new">Learn To Fly 3</a>
+        <br /><br /><br />
 
-                <a href="MadalinStuntCars2-main/" class="gamechild notworking"
-                    >Madalin Stunt Cars 2</a
-                >
-                <br /><br /><br />
-                <a href="mainland-wars/" class="gamechild new">Mainland Wars</a>
-                <br /><br /><br />
-                <a href="latest-minecraft/" class="gamechild popular"
-                    >Minecraft (Newest, Recommended)</a
-                >
-                <br /><br /><br />
-                <a href="minecraft" class="gamechild">Minecraft</a>
-                <br /><br /><br />
-                <a href="new-minecraft/" class="gamechild"
-                    >Minecraft (Newer, Multiplayer Only)</a
-                >
-                <br /><br /><br />
-                <a
-                    href="minecraft-pokemon/minecraft.html"
-                    class="gamechild modded"
-                    >Minecraft Pokemon</a
-                >
-                <br /><br /><br />
-                <a href="minesweeper/mine.html" class="gamechild"
-                    >Minesweeper</a
-                >
-                <br /><br /><br />
-                <a href="game2/motox3m" class="gamechild flash">Moto X3M</a>
-                <br /><br /><br />
-                <a href="game2/motox3m-pool" class="gamechild flash"
-                    >Moto X3M Pool</a
-                >
-                <br /><br /><br />
-                <a href="game2/motox3m-spooky" class="gamechild flash"
-                    >Moto X3M Spooky</a
-                >
-                <br /><br /><br />
-                <a href="game2/motox3m-winter" class="gamechild flash"
-                    >Moto X3M Winter</a
-                >
-                <br /><br /><br />
-                <a href="game2/motox3m2" class="gamechild flash">Moto X3M2</a>
-                <br /><br /><br />
-                <a href="mr-bullet-fixed/" class="gamechild popular"
-                    >Mr. Bullet</a
-                >
-                <br /><br /><br />
-                <a href="my-perfect-hotel/" class="gamechild new"
-                    >My Perfect Hotel</a
-                >
-                <br /><br /><br />
-                <a href="only-up-2-main/" class="gamechild">Only Up 2</a>
-                <br /><br /><br />
-                <a href="oldosu" class="gamechild">Old OSU!online</a>
-                <br /><br /><br />
-                <a href="osu!online" class="gamechild">OSU!online</a>
-                <br /><br /><br />
-                <a href="game2/ovo" class="gamechild">Ovo</a>
-                <br /><br /><br />
-                <a href="parking-fury/" class="gamechild new">Parking Fury</a>
-                <br /><br /><br />
-                <a href="parking-fury-2/" class="gamechild new"
-                    >Parking Fury 2</a
-                >
-                <br /><br /><br />
-                <a href="parking-fury-3-main/" class="gamechild new"
-                    >Parking Fury 3</a
-                >
-                <br /><br /><br />
-                <a href="papa-louie-2/" class="gamechild new">Papa Louie 2</a>
-                <br /><br /><br />
-                <a href="papa-louie-3/" class="gamechild new">Papa Louie 3</a>
-                <br /><br /><br />
-                <a href="game2/paperio2" class="gamechild popular"
-                    >Paper.io 2</a
-                >
-                <br /><br /><br />
-                <a href="pacman/" class="gamechild emulator">Pacman</a>
-                <br /><br /><br />
-                <a href="pokemon-emerald/" class="gamechild emulator"
-                    >Pokemon Emerald</a
-                >
-                <br /><br /><br />
-                <a href="pokemon-fire/" class="gamechild emulator"
-                    >Pokemon Fire</a
-                >
-                <br /><br /><br />
-                <a href="pokemon-leaf/" class="gamechild emulator"
-                    >Pokemon Leaf</a
-                >
-                <br /><br /><br />
-                <a href="papas-burgeria-main/" class="gamechild flash"
-                    >Papa's Burgeria</a
-                >
-                <br /><br /><br />
-                <a href="papasfreezeria-main/" class="gamechild flash"
-                    >Papa's Freezeria</a
-                >
-                <br /><br /><br />
-                <a href="papas-pizzaria-main/" class="gamechild flash"
-                    >Papa's Pizzeria</a
-                >
-                <br /><br /><br />
-                <a href="perfect-circle/" class="gamechild new">Perfect Circle (Neal.Fun)</a>
-                <br /><br /><br />
-                <a href="polytrack/" class="gamechild new">Polytrack</a>
-                <br /><br /><br />
-                <a href="pvz/" class="gamechild popular">Plants Vs. Zombies</a>
-                <br /><br /><br />
-                <a href="runpx" class="gamechild gradient-text"
-                    >Proxy (Active)</a
-                >
-                <br /><br /><br />
-                <a
-                    href="https://dylansantwani.com/run.php"
-                    class="gamechild gradient-text"
-                    >Proxy (Custom)</a
-                >
-                <br /><br /><br />
-                <a href="racing/v4.final.html" class="gamechild">Racing</a>
-                <br /><br /><br />
-                <a href="raft-wars/" class="gamechild popular">Raft Wars</a>
-                <br /><br /><br />
-                <a href="raft-wars-2-main/" class="gamechild new"
-                    >Raft Wars 2</a
-                >
-                <br /><br /><br />
-                <a href="red-ball-3/" class="gamechild flash">Red Ball 3</a>
-                <br /><br /><br />
-                <a href="redball4/" class="gamechild flash">Red Ball 4</a>
-                <br /><br /><br />
-                <a href="retro-bowl/" class="gamechild popular">Retro Bowl</a>
-                <br /><br /><br />
-                <a
-                    href="retrobowlexploitguide.html"
-                    class="gamechild gradient-text"
-                    >Retro Bowl (Infinite Coaching Credits)</a
-                >
-                <br /><br /><br />
-                <a
-                    href="retro-bowl-college-football-main/"
-                    class="gamechild popular"
-                    >Retro Bowl College</a
-                >
-                <br /><br /><br />
-                <a href="return-man-2/" class="gamechild new">Return Man 2</a>
-                <br /><br /><br />
-                <a href="return-man-3/" class="gamechild new">Return Man 3</a>
-                <br /><br /><br />
-                <a href="run/" class="gamechild flash">Run</a>
-                <br /><br /><br />
-                <a href="run2/" class="gamechild flash">Run 2</a>
-                <br /><br /><br />
-                <a href="run3/" class="gamechild flash">Run 3</a>
-                <br /><br /><br />
-                <a href="rooftop-snipers/" class="gamechild popular"
-                    >Rooftop Snipers</a
-                >
-                <br /><br /><br />
-                <a href="rooftop-snipers-2/" class="gamechild new"
-                    >Rooftop Snipers 2</a
-                >
-                <br /><br /><br />
-                <a href="RocketSoccerDerby/" class="gamechild popular"
-                    >Rocket Soccer Derby</a
-                >
-                <br /><br /><br />
-                <a href="self-titled/" class="gamechild new">Self Titled</a>
-                <br /><br /><br />
-                <a href="sandtris/" class="gamechild gradient-text">Sandtris</a>
-                <br /><br /><br />
-                <a href="slope/" class="gamechild popular">Slope</a>
-                <br /><br /><br />
-                <a href="Slope-2-main/" class="gamechild new">Slope 2</a>
-                <br /><br /><br />
-                <a href="Slope3.github.io-main/" class="gamechild new"
-                    >Slope 3</a
-                >
-                <br /><br /><br />
-                <a href="slow-roads/" class="gamechild new">Slow Roads</a>
-                <br /><br /><br />
-                <a href="stack/" class="gamechild gradient-text">Stack</a>
-                <br /><br /><br />
-                <a href="stickman-hook/" class="gamechild popular"
-                    >Stickman Hook</a
-                >
-                <br /><br /><br />
-                <a href="subway-surfers/" class="gamechild popular"
-                    >Subway Surfers</a
-                >
-                <br /><br /><br />
-                <a href="subway-surfers-bejing/" class="gamechild new"
-                    >Subway Surfers Bejing</a
-                >
-                <br /><br /><br />
-                <a
-                    href="subway-surfers-new-york-main/"
-                    class="gamechild gradient-text"
-                    >Subway Surfers New York</a
-                >
-                <br /><br /><br />
-                <a href="subway-surfers-san-francisco-main/" class="gamechild"
-                    >Subway Surfers San Francisco</a
-                >
-                <br /><br /><br />
-                <a href="subway-surfers-zurich-main/" class="gamechild"
-                    >Subway Surfers Zurich</a
-                >
-                <br /><br /><br />
+        <a href="MadalinStuntCars2-main/" class="gamechild notworking">Madalin Stunt Cars 2</a>
+        <br /><br /><br />
+        <a href="mainland-wars/" class="gamechild new">Mainland Wars</a>
+        <br /><br /><br />
+        <a href="latest-minecraft/" class="gamechild popular">Minecraft (Newest, Recommended)</a>
+        <br /><br /><br />
+        <a href="minecraft" class="gamechild">Minecraft</a>
+        <br /><br /><br />
+        <a href="new-minecraft/" class="gamechild">Minecraft (Newer, Multiplayer Only)</a>
+        <br /><br /><br />
+        <a href="minecraft-pokemon/minecraft.html" class="gamechild modded">Minecraft Pokemon</a>
+        <br /><br /><br />
+        <a href="minesweeper/mine.html" class="gamechild">Minesweeper</a>
+        <br /><br /><br />
+        <a href="game2/motox3m" class="gamechild flash">Moto X3M</a>
+        <br /><br /><br />
+        <a href="game2/motox3m-pool" class="gamechild flash">Moto X3M Pool</a>
+        <br /><br /><br />
+        <a href="game2/motox3m-spooky" class="gamechild flash">Moto X3M Spooky</a>
+        <br /><br /><br />
+        <a href="game2/motox3m-winter" class="gamechild flash">Moto X3M Winter</a>
+        <br /><br /><br />
+        <a href="game2/motox3m2" class="gamechild flash">Moto X3M2</a>
+        <br /><br /><br />
+        <a href="mr-bullet-fixed/" class="gamechild popular">Mr. Bullet</a>
+        <br /><br /><br />
+        <a href="my-perfect-hotel/" class="gamechild new">My Perfect Hotel</a>
+        <br /><br /><br />
+        <a href="only-up-2-main/" class="gamechild">Only Up 2</a>
+        <br /><br /><br />
+        <a href="oldosu" class="gamechild">Old OSU!online</a>
+        <br /><br /><br />
+        <a href="osu!online" class="gamechild">OSU!online</a>
+        <br /><br /><br />
+        <a href="game2/ovo" class="gamechild">Ovo</a>
+        <br /><br /><br />
+        <a href="parking-fury/" class="gamechild new">Parking Fury</a>
+        <br /><br /><br />
+        <a href="parking-fury-2/" class="gamechild new">Parking Fury 2</a>
+        <br /><br /><br />
+        <a href="parking-fury-3-main/" class="gamechild new">Parking Fury 3</a>
+        <br /><br /><br />
+        <a href="papa-louie-2/" class="gamechild new">Papa Louie 2</a>
+        <br /><br /><br />
+        <a href="papa-louie-3/" class="gamechild new">Papa Louie 3</a>
+        <br /><br /><br />
+        <a href="game2/paperio2" class="gamechild popular">Paper.io 2</a>
+        <br /><br /><br />
+        <a href="pacman/" class="gamechild emulator">Pacman</a>
+        <br /><br /><br />
+        <a href="pokemon-emerald/" class="gamechild emulator">Pokemon Emerald</a>
+        <br /><br /><br />
+        <a href="pokemon-fire/" class="gamechild emulator">Pokemon Fire</a>
+        <br /><br /><br />
+        <a href="pokemon-leaf/" class="gamechild emulator">Pokemon Leaf</a>
+        <br /><br /><br />
+        <a href="papas-burgeria-main/" class="gamechild flash">Papa's Burgeria</a>
+        <br /><br /><br />
+        <a href="papasfreezeria-main/" class="gamechild flash">Papa's Freezeria</a>
+        <br /><br /><br />
+        <a href="papas-pizzaria-main/" class="gamechild flash">Papa's Pizzeria</a>
+        <br /><br /><br />
+        <a href="perfect-circle/" class="gamechild new">Perfect Circle (Neal.Fun)</a>
+        <br /><br /><br />
+        <a href="polytrack/" class="gamechild new">Polytrack</a>
+        <br /><br /><br />
+        <a href="pvz/" class="gamechild popular">Plants Vs. Zombies</a>
+        <br /><br /><br />
+        <a href="runpx" class="gamechild gradient-text">Proxy (Active)</a>
+        <br /><br /><br />
+        <a href="https://dylansantwani.com/run.php" class="gamechild gradient-text">Proxy (Custom)</a>
+        <br /><br /><br />
+        <a href="racing/v4.final.html" class="gamechild">Racing</a>
+        <br /><br /><br />
+        <a href="raft-wars/" class="gamechild popular">Raft Wars</a>
+        <br /><br /><br />
+        <a href="raft-wars-2-main/" class="gamechild new">Raft Wars 2</a>
+        <br /><br /><br />
+        <a href="red-ball-3/" class="gamechild flash">Red Ball 3</a>
+        <br /><br /><br />
+        <a href="redball4/" class="gamechild flash">Red Ball 4</a>
+        <br /><br /><br />
+        <a href="retro-bowl/" class="gamechild popular">Retro Bowl</a>
+        <br /><br /><br />
+        <a href="retrobowlexploitguide.html" class="gamechild gradient-text">Retro Bowl (Infinite Coaching Credits)</a>
+        <br /><br /><br />
+        <a href="retro-bowl-college-football-main/" class="gamechild popular">Retro Bowl College</a>
+        <br /><br /><br />
+        <a href="return-man-2/" class="gamechild new">Return Man 2</a>
+        <br /><br /><br />
+        <a href="return-man-3/" class="gamechild new">Return Man 3</a>
+        <br /><br /><br />
+        <a href="run/" class="gamechild flash">Run</a>
+        <br /><br /><br />
+        <a href="run2/" class="gamechild flash">Run 2</a>
+        <br /><br /><br />
+        <a href="run3/" class="gamechild flash">Run 3</a>
+        <br /><br /><br />
+        <a href="rooftop-snipers/" class="gamechild popular">Rooftop Snipers</a>
+        <br /><br /><br />
+        <a href="rooftop-snipers-2/" class="gamechild new">Rooftop Snipers 2</a>
+        <br /><br /><br />
+        <a href="RocketSoccerDerby/" class="gamechild popular">Rocket Soccer Derby</a>
+        <br /><br /><br />
+        <a href="self-titled/" class="gamechild new">Self Titled</a>
+        <br /><br /><br />
+        <a href="sandtris/" class="gamechild gradient-text">Sandtris</a>
+        <br /><br /><br />
+        <a href="slope/" class="gamechild popular">Slope</a>
+        <br /><br /><br />
+        <a href="Slope-2-main/" class="gamechild new">Slope 2</a>
+        <br /><br /><br />
+        <a href="Slope3.github.io-main/" class="gamechild new">Slope 3</a>
+        <br /><br /><br />
+        <a href="slow-roads/" class="gamechild new">Slow Roads</a>
+        <br /><br /><br />
+        <a href="stack/" class="gamechild gradient-text">Stack</a>
+        <br /><br /><br />
+        <a href="stickman-hook/" class="gamechild popular">Stickman Hook</a>
+        <br /><br /><br />
+        <a href="subway-surfers/" class="gamechild popular">Subway Surfers</a>
+        <br /><br /><br />
+        <a href="subway-surfers-bejing/" class="gamechild new">Subway Surfers Bejing</a>
+        <br /><br /><br />
+        <a href="subway-surfers-new-york-main/" class="gamechild gradient-text">Subway Surfers New York</a>
+        <br /><br /><br />
+        <a href="subway-surfers-san-francisco-main/" class="gamechild">Subway Surfers San Francisco</a>
+        <br /><br /><br />
+        <a href="subway-surfers-zurich-main/" class="gamechild">Subway Surfers Zurich</a>
+        <br /><br /><br />
 
-                <a href="superhot-fixed/" class="gamechild new">Superhot</a>
-                <br /><br /><br />
-                <a href="super-mario-63/" class="gamechild emulator"
-                    >Super Mario 63</a
-                >
-                <br /><br /><br />
-                <a href="super-mario-64-main/" class="gamechild emulator"
-                    >Super Mario 64</a
-                >
-                <br /><br /><br />
-                <a href="super-mario-bros/" class="gamechild emulator"
-                    >Super Mario Bros</a
-                >
-                <br /><br /><br />
-                <a href="super-star-car-main/" class="gamechild popular"
-                    >Super Star Car</a
-                >
+        <a href="superhot-fixed/" class="gamechild new">Superhot</a>
+        <br /><br /><br />
+        <a href="super-bike/" class="gamechild new">Super Bike the Champion</a>
+        <br /><br /><br />
+        <a href="super-mario-63/" class="gamechild emulator">Super Mario 63</a>
+        <br /><br /><br />
+        <a href="super-mario-64-main/" class="gamechild emulator">Super Mario 64</a>
+        <br /><br /><br />
+        <a href="super-mario-bros/" class="gamechild emulator">Super Mario Bros</a>
+        <br /><br /><br />
+        <a href="super-star-car-main/" class="gamechild popular">Super Star Car</a>
 
-                <br /><br /><br />
-                <a href="super-smash-flash/" class="gamechild new"
-                    >Super Smash Flash</a
-                >
-                <br /><br /><br />
-                <a href="tetris/tetris.html" class="gamechild popular"
-                    >Tetris</a
-                >
-                <br /><br /><br />
-                <a href="templerun2/" class="gamechild popular">Temple Run 2</a>
-                <br /><br /><br />
-                <a
-                    href="tetris-but-better/Tetris!.html"
-                    class="gamechild modded"
-                    >Better Tetris</a
-                >
-                <br /><br /><br />
-                <a href="tictactoe" class="gamechild">Tic Tac Toe</a>
-                <br /><br /><br />
-                <a href="tictactoe-master/tictactoe.xhtml" class="gamechild"
-                    >Tic Tac Toe 2</a
-                >
-                <br /><br /><br />
-                <a href="TS2-main/" class="gamechild popular">Time Shooter 2</a>
-                <br /><br /><br />
-                <a href="traffic-mania/" class="gamechild popular"
-                    >Traffic Mania</a
-                >
-                <br /><br /><br />
-                <a href="tomb-of-the-mask/" class="gamechild new"
-                    >Tomb of the Mask</a
-                >
-                <br /><br /><br />
-                <a href="tower-chinese" class="gamechild">Chinese Tower Game</a>
-                <br /><br /><br />
-                <a href="tower-defense-2d-main/" class="gamechild new"
-                    >Tower Defense 2D</a
-                >
-                <br /><br /><br />
-                <a href="vex4/" class="gamechild">Vex 4</a>
-                <br /><br /><br />
-                <a href="vex5/" class="gamechild">Vex 5</a>
-                <br /><br /><br />
-                <a href="vex6" class="gamechild">Vex 6</a>
-                <br /><br /><br />
-                <a href="vex7" class="gamechild popular">Vex 7</a>
-                <br /><br /><br />
-                <a href="vex-8-main/" class="gamechild popular">Vex 8</a>
-                <br /><br /><br />
-                <a href="wordle-unlimited/" class="gamechild new"
-                    >Wordle Unlimited</a
-                >
-                <br /><br /><br />
-                <a href="game2/worldshardestgame/" class="gamechild popular"
-                    >World's Hardest Game</a
-                >
-                <br /><br /><br />
-                <a href="game2/worldshardestgame2/" class="gamechild"
-                    >World's Hardest Game 2</a
-                >
-                <br /><br /><br />
+        <br /><br /><br />
+        <a href="super-smash-flash/" class="gamechild new">Super Smash Flash</a>
+        <br /><br /><br />
+        <a href="tetris/tetris.html" class="gamechild popular">Tetris</a>
+        <br /><br /><br />
+        <a href="templerun2/" class="gamechild popular">Temple Run 2</a>
+        <br /><br /><br />
+        <a href="tetris-but-better/Tetris!.html" class="gamechild modded">Better Tetris</a>
+        <br /><br /><br />
+        <a href="tictactoe" class="gamechild">Tic Tac Toe</a>
+        <br /><br /><br />
+        <a href="tictactoe-master/tictactoe.xhtml" class="gamechild">Tic Tac Toe 2</a>
+        <br /><br /><br />
+        <a href="TS2-main/" class="gamechild popular">Time Shooter 2</a>
+        <br /><br /><br />
+        <a href="traffic-mania/" class="gamechild popular">Traffic Mania</a>
+        <br /><br /><br />
+        <a href="tomb-of-the-mask/" class="gamechild new">Tomb of the Mask</a>
+        <br /><br /><br />
+        <a href="tower-chinese" class="gamechild">Chinese Tower Game</a>
+        <br /><br /><br />
+        <a href="tower-defense-2d-main/" class="gamechild new">Tower Defense 2D</a>
+        <br /><br /><br />
+        <a href="vex4/" class="gamechild">Vex 4</a>
+        <br /><br /><br />
+        <a href="vex5/" class="gamechild">Vex 5</a>
+        <br /><br /><br />
+        <a href="vex6" class="gamechild">Vex 6</a>
+        <br /><br /><br />
+        <a href="vex7" class="gamechild popular">Vex 7</a>
+        <br /><br /><br />
+        <a href="vex-8-main/" class="gamechild popular">Vex 8</a>
+        <br /><br /><br />
+        <a href="wordle-unlimited/" class="gamechild new">Wordle Unlimited</a>
+        <br /><br /><br />
+        <a href="game2/worldshardestgame/" class="gamechild popular">World's Hardest Game</a>
+        <br /><br /><br />
+        <a href="game2/worldshardestgame2/" class="gamechild">World's Hardest Game 2</a>
+        <br /><br /><br />
 
-                <a href="worlds-hardest-game-3-main/" class="gamechild new"
-                    >World's Hardest Game 3</a
-                >
-                <br /><br /><br />
+        <a href="worlds-hardest-game-3-main/" class="gamechild new">World's Hardest Game 3</a>
+        <br /><br /><br />
 
-                <div
-                    style="
+        <div style="
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                    "
-                >
-                    <button
-                        onclick="window.location.href = 'request'"
-                        style="text-align: center; margin: 0"
-                        class="top"
-                    >
-                        Send a game request
-                    </button>
-                </div>
-            </div>
-            <!-- Histats.com  (div with counter) -->
-            <div id="histats_counter"></div>
-            <!-- Histats.com  START  (aync)-->
-            <script type="text/javascript">
-                var _Hasync = _Hasync || [];
-                _Hasync.push([
-                    "Histats.start",
-                    "1,4918408,4,511,95,18,00000000",
-                ]);
-                _Hasync.push(["Histats.fasi", "1"]);
-                _Hasync.push(["Histats.track_hits", ""]);
-                (function () {
-                    var hs = document.createElement("script");
-                    hs.type = "text/javascript";
-                    hs.async = true;
-                    hs.src = "//s10.histats.com/js15_as.js";
-                    (
-                        document.getElementsByTagName("head")[0] ||
-                        document.getElementsByTagName("body")[0]
-                    ).appendChild(hs);
-                })();
-            </script>
-            <noscript
-                ><a href="/" target="_blank"
-                    ><img
-                        src="//sstatic1.histats.com/0.gif?4918408&101"
-                        alt="hit counter code"
-                        border="0" /></a
-            ></noscript>
-            <!-- Histats.com  END  -->cc
-        </body>
-    </html>
+                    ">
+            <button onclick="window.location.href = 'request'" style="text-align: center; margin: 0" class="top">
+                Send a game request
+            </button>
+        </div>
+    </div>
+    <!-- Histats.com  (div with counter) -->
+    <div id="histats_counter"></div>
+    <!-- Histats.com  START  (aync)-->
+    <script type="text/javascript">
+        var _Hasync = _Hasync || [];
+        _Hasync.push([
+            "Histats.start",
+            "1,4918408,4,511,95,18,00000000",
+        ]);
+        _Hasync.push(["Histats.fasi", "1"]);
+        _Hasync.push(["Histats.track_hits", ""]);
+        (function () {
+            var hs = document.createElement("script");
+            hs.type = "text/javascript";
+            hs.async = true;
+            hs.src = "//s10.histats.com/js15_as.js";
+            (
+                document.getElementsByTagName("head")[0] ||
+                document.getElementsByTagName("body")[0]
+            ).appendChild(hs);
+        })();
+    </script>
+    <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4918408&101" alt="hit counter code"
+                border="0" /></a></noscript>
+    <!-- Histats.com  END  -->cc
+</body>
+
+</html>
+
 </html>
